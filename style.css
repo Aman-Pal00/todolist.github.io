@@ -1,0 +1,194 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+.heading {
+  padding: 90px 120px;
+}
+span {
+  display: block;
+  font-size: 4.2vw;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+.mainhead {
+  text-align: center;
+  font-size: 2.2vw;
+  font-weight: 600;
+  word-spacing: 8px;
+}
+.startbutton {
+  display: block;
+  text-align: center;
+  margin-top: 49px;
+}
+.startforfree1 {
+  background: #e44232;
+  width: 200px;
+  height: 50px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  border: #e44232;
+  font-weight: 600;
+  font-size: large;
+  color: white;
+}
+
+
+.headimg{
+    display: flex;
+    justify-content: space-between;
+
+}
+.imgleft{
+  width: 33vw;
+  z-index: -1;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+.imgmid{
+  width:70vw ;
+  z-index: 1;
+  position: relative;
+  top: 0px;
+ right: 17vw;
+}
+.imgright{
+  width: 33vw;
+  z-index: -1;
+  position: relative;
+  top: 0px;
+  right: 37.4vw;
+}
+
+footer{
+    background: #ffddbc;
+    margin-top:250px;
+}
+.upperfooter{
+    display: flex;
+    padding: 0px 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerimg{
+    height: 45vw;
+    margin-right: 129px;
+    position: relative;
+    top: -80px;
+
+}
+.footerlistimg{
+  height: 5vw;
+}
+.todolist ,.todolist3{
+    color: #e44232;
+    display: inline;
+    font-size: 3vw;
+
+}
+.startforfree {
+  background: #e44232;
+  padding: 8px 24px;
+  border-radius: 10px;
+  border: #e44232;
+  font-weight: 500;
+  color: white;
+}
+.h3footer{
+    margin-top: 200px;
+    font-size:4vw;
+    
+}
+.lowerfooter{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-around;
+}
+.privacypolicy{
+    background-color: #00000048;
+    padding: 10px 24px;
+    height: 50px;
+    
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 720px) and (min-width: 585px) {
+  span {
+    font-size: 7.8vw;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+ .heading {
+    padding: 90px 36px;
+  }
+  .mainhead {
+    font-size: 4.2vw;
+    word-spacing:normal;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  span {
+    font-size: 7.8vw;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+  .startforfree1 {
+    
+    width: 100px;
+    height: 50px;
+    padding: 0px 0px;
+    border-radius: 10px;
+    border: #e44232;
+    font-weight: 400;
+    font-size: small;
+    color: white;
+  }
+  .footerimg{
+    display: none;
+    height: 45vw;
+    margin-right: 129px;
+    position: relative;
+    top: -80px;
+
+}
+.h3footer{
+  margin: 40px 0px 0px 20px;
+  font-size:8vw;
+  
+}
+  .lowerfooter{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
+    
+}
+.todolist3{
+  color: #e44232;
+  display: none;
+  font-size: 3vw;
+
+}
+.todolist {
+  color: #e44232;
+  display: inline;
+  font-size: 8vw;
+
+}
+  .heading{
+    padding: 90px 36px;
+  }
+  .mainhead {
+    font-size: 4.2vw;
+    word-spacing:normal;
+    font-weight: 400;
+  }
+}
