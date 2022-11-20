@@ -1,134 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>TO DO LIST</title>
-</head>
-<body>
-        <nav  class="navbar  navbar-expand-lg bg-danger text-white">
-            <div class="container-fluid">
-              <a class="navbar-brand fw-bolder" href="#">LOGO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#">Our team</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#">Contact Us </a>
-                  </li>
-                  
-                </ul>
-                
-              </div>
-            </div>
-          </nav>
-    <main>
-      <div class="heading">
-        
-         <span>Organize your <br>
-            work and life, finally.</span>
-            <p class="mainhead">
-            Become focused, organized, and calm with <span class="todolist"> To Do List</span>.    
-          </p>
-        </div>
-        <div class="startbutton">
-        <button class="startforfree1">Start for free</button></div>
-        <div class="headimg">
-          <img class="imgleft" src="navbgright.webp" alt="">
-          <img class="imgmid" src="navbg.avif" alt="">
-          <img class="imgright" src="navbgleft.webp" alt="">
-        </div>
-    </main>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
-    <footer>
-      <div class="upperfooter">
-     <img src="footerbg.webp" alt="" class="footerimg">
-     <div> <h3 class="h3footer">Achieve peace of mind with <span class="todolist"> To Do List</span></h3>
-      <button class="startforfree">Start for free</button>
-   </div>
-  </div> <hr>
-   <div class="lowerfooter">
-         <div ><img  class="footerlistimg" src="todolisticon.webp" alt=""><span class="todolist3" > To Do List</span>
-              <p>Join millions of people who organize work and life with To Do List.</p>
-        </div>  
-        <div>
-          <h5>Features</h5>
-          <ul>
-            <li>point1</li>
-            <li>point2</li>
-            <li>point3</li>
-          </ul>
-          
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7f906f5f83.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>TO DO LIST</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav">
+      <span class="logo left"><img class="footerlistimg" src="todolisticon.webp" alt=""></span>
+      <label for="checkbox"><img class="menu" src="bars-solid(1).svg" alt="" />
+      </label><input type="checkbox" id="checkbox" />
+      <img src="xmark-solid.svg" class="cross" alt="">
+      <span class="right">
+        <a class="navtag" href="" class="active">home</a>
+        <a class="navtag" href="#feature">Features</a>
+        <a class="navtag" href="">AboutUs</a>
+        <a class="navtag" href="">ContactUs</a>
+        <a class="navtag" href="">Feedback</a>
+
+      </span>
+    </div>
+  </nav>
+  <main>
+    <div class="heading">
+      <span>Organize your <br>
+        work and life, finally.</span>
+      <p class="mainhead">
+        Become focused, organized, and calm with <span class="todolist"> To Do List</span>.
+      </p>
+    </div>
+    <div class="startbutton">
+      <a href="#addtask" class="startforfree1"> start for free</a>
+    </div>
+    <div class="headimg">
+      <img class="imgleft" src="navbgright.webp" alt="">
+      <img class="imgmid" src="navbg.avif" alt="">
+      <img class="imgright" src="navbgleft.webp" alt="">
+    </div>
+    <div id="feature">
+      <div class="feature1">
+        <div class="text">
+          <div>
+            <div style="text-align: center;">Add your tasks. <br>Organize your life. <br> Achieve more every day.</div>
+            <div class="smalltext">Add tasks like “Read work emails every day at 10am” to fill your to-do list in
+              seconds.</div>
+          </div>
         </div>
-        <div>
-          <h5>Resources</h5>
-          <ul>
-            <li>point1</li>
-            <li>point2</li>
-            <li>point3</li>
-          </ul>
-          
+
+        <div class="featureimgdiv"><img src="featureimg.webp" class="featureimg" alt=""></div>
+      </div>
+
+      <div class="feature2">
+        <div class="featureimg"><img class="featureimg" src="featureimg2.webp" alt=""></div>
+        <div class="text">
+          <div>
+            <div style="text-align: center;">Reach that mental clarity <br> you’ve been longing for.</div>
+            <div class="smalltext">Your to-do lists are automatically sorted into Today, Upcoming and custom Filter
+              views to help you focus on your most important things.</div>
+          </div>
         </div>
-        <div>
-          <h5>Company</h5>
-          <ul>
-            <li>About Us </li>
-            <li>point2</li>
-            <li>point3</li>
-          </ul>
-          
+
+      </div>
+
+
+
+      <div id="addtask">
+        <h1 style="display:block; text-align: center; margin: 20px; font-size:5.3vw;">add your task</h1>
+      </div>
+      <form action="index.php">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-   </div>
-   <div class="privacypolicy">
-    <p>Security || privacy || Terms &#169 2022 ToDoList ,inc</p>
-   </div>
-    </footer>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+      <div class="table">
+
+        <table class="tabletag">
+          <thead>
+            <tr>
+              <th class="sno">S.no</th>
+              <th class="taskname">Task name</th>
+              <th class="priority">Priority</th>
+              <th class="status">Status</th>
+              <th class="startdate">Start date</th>
+              <th class="duedate">Due date</th>
+              <th class="note">Additional notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sno">1</td>
+              <td class="taskname">work</td>
+              <td class="priority">high</td>
+              <td class="status">progress</td>
+              <td class="startdate">9</td>
+              <td class="duedate">8</td>
+              <td class="note">college work</td>
+            </tr>
+            <tr>
+              <td class="sno">1</td>
+              <td class="taskname">work</td>
+              <td class="priority">high</td>
+              <td class="status">progress</td>
+              <td class="startdate">9</td>
+              <td class="duedate">8</td>
+              <td class="note">college work</td>
+            </tr>
+            <tr>
+              <td class="sno">1</td>
+              <td class="taskname">work</td>
+              <td class="priority">high</td>
+              <td class="status">progress</td>
+              <td class="startdate">9</td>
+              <td class="duedate">8</td>
+              <td class="note">college work</td>
+            </tr>
+            <tr>
+              <td class="sno">1</td>
+              <td class="taskname">work</td>
+              <td class="priority">high</td>
+              <td class="status">progress</td>
+              <td class="startdate">9</td>
+              <td class="duedate">8</td>
+              <td class="note">college work</td>
+            </tr>
+            <tr>
+              <td class="sno">1</td>
+              <td class="taskname">work</td>
+              <td class="priority">high</td>
+              <td class="status">progress</td>
+              <td class="startdate">9</td>
+              <td class="duedate">8</td>
+              <td class="note">college work</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- previous next buttons -->
+      <div style="display:flex; ">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" style="text-align:center;">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+  </main>
+
+  <footer>
+    <div class="upperfooter">
+      <img src="footerbg.webp" alt="" class="footerimg">
+      <div style="align-items: centre; display:block; justify-content:center;">
+        <h3 class="h3footer">Achieve peace of mind with <span class="todolist"> To Do List</span></h3>
+        <button class="startforfree">Start for free</button>
+      </div>
+    </div>
+    <hr>
+    <div class="lowerfooter">
+      <div><img class="footerlistimg" src="todolisticon.webp" alt=""><span class="todolist3"> To Do List</span>
+        <p>Join millions of people who organize work and life with To Do List.</p>
+      </div>
+      <div>
+        <h5>Features</h5>
+        <ul>
+          <li>point1</li>
+          <li>point2</li>
+          <li>point3</li>
+        </ul>
+
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li>point1</li>
+          <li>point2</li>
+          <li>point3</li>
+        </ul>
+
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li>About Us </li>
+          <li>point2</li>
+          <li>point3</li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="privacypolicy">
+      <p>Security || privacy || Terms &#169 2022 ToDoList ,inc</p>
+    </div>
+  </footer>
 </body>
+
 </html>
