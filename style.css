@@ -3,6 +3,7 @@
   padding: 0px;
   color: black;
 }
+<<<<<<< Updated upstream
 
 .nav {
   background-color: #e44232;
@@ -95,6 +96,20 @@ a:hover {
 
 
   }
+=======
+html{
+  scroll-behavior: smooth;
+}
+.startingimg{
+  width: 100vw;
+  height: 20vh;
+}
+nav{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  
+>>>>>>> Stashed changes
 }
 
 
@@ -125,7 +140,11 @@ span {
   margin-top: 49px;
 }
 
+<<<<<<< Updated upstream
 .startforfree1 {
+=======
+.startforfree {
+>>>>>>> Stashed changes
   background: #e44232;
   width: 200px;
   height: 50px;
@@ -203,6 +222,7 @@ footer {
 
 }
 
+<<<<<<< Updated upstream
 .startforfree {
   background: #e44232;
   padding: 8px 24px;
@@ -231,11 +251,260 @@ footer {
   height: 50px;
 
   text-align: center;
+=======
+
+
+.h3footer {
+  font-size: 4vw;
+
+}
+
+.lowerfooter {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
+.lowerfooterdata{
+  width: 20%;
+  text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+
+}
+.privacypolicy {
+  background-color: #00000048;
+  padding: 10px 24px;
+  text-align: center;
+}
+
+
+/* this css is for feature of to do list  */
+.feature1 ,.feature2{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+.text{
+  width: 50vw;
+  font-size: 7vh;
+  font-weight: 500;
+  margin: 8rem;
+
+}
+.smalltext{
+  font-size: 4vh;
+  font-weight: 400;
+  text-align: center;
 }
 
 
 
+.featureimgdiv{
+   width: 50vw;
+   display: flex;
+   justify-content: center;
+}
+.featureimg{
+  width: 30vw;
+}
 
+
+/* this css is for form  */
+
+form {
+  padding: 2rem 3rem;
+  margin: 10px 20px ;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.h4,
+.formpriority,
+.formduedate,
+.formnote {
+  font-size: 1.4rem;
+  margin: 15px 0px;
+  padding-left: 10px;
+}
+
+.formtaskname,
+#formduedate,
+#formnote {
+  border: 1px solid grey;
+    border-radius: 34px;
+    font-size: large;
+    padding: 0.5rem;
+    margin-top: 1rem;
+
+}
+.formtaskname:hover ,#formduedate:hover , #formnote:hover{
+  transform: scale(1.02);
+}
+
+
+label {
+  font-size: 20px;
+  border-bottom: 2px solid red;
+  height: fit-content;
+  padding: 10px;
+  margin: 0px 10px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+label:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+
+.formsubmitbutton{
+  background-color:#3bb1dc;
+  margin: 31px 0px;
+  height: 32px;
+  border: #3bb1dc;
+  border-radius: 10px;
+  width: 119px;
+  text-align: center;
+}
+.formsubmitbutton:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  color: white ;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 15px#686f7b;
+}
+
+
+/* about us details */
+#aboutus{
+  margin-top: 5rem;
+}
+.aman {
+  margin: 5rem 10%;
+  padding:0px 20px 20px 20px;
+  background-color:#ffddbc;
+  border-radius: 20px;
+  box-shadow: 5px 3px 20px #ffddbc;
+}
+.aboutusimg{
+  text-align: center;
+  position: relative;
+  top: -44px;
+}
+.aboutusimg2{
+  text-align: center;
+  padding: 20px ;
+  
+}
+.socialmedialinks{
+    text-align: center;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutmetext{
+    text-align: center;
+    padding: 20px ;
+}
+
+.ayush {
+  /* border: 2px solid black; */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffddbc;
+  border-radius: 20px;
+  box-shadow: 5px 3px 20px#ffddbc;
+
+}
+.form_container{
+  padding: 3rem;
+>>>>>>> Stashed changes
+}
+
+.contain_form_data{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  
+}
+.contain_form_data div{
+  padding: 2rem;
+  box-shadow: 10px 10px 10px grey;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  label {
+      display: flex;
+      margin: 10px;
+
+  }
+}
+@media screen and (max-width: 1002px){
+  .text{
+      width: 50vw;
+      font-size: 7vh;
+      font-weight: 500;
+      margin: 4rem;
+  
+}
+}
+
+
+@media screen and (max-width: 879px){
+  .text{
+      width: 50vw;
+      font-size: 5vh;
+      font-weight: 500;
+      margin: 2rem;
+
+  }
+  .smalltext{
+      font-size: 3vh;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 639px){
+  .feature1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .feature2{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .featureimg{
+      width: 62vw;
+  }
+  .text{
+      width: 80vw;
+      font-size: 4.1vh;
+      font-weight: 600;
+      padding: 2rem;
+  }
+  .smalltext{
+      font-size: 2.3vh;
+      font-weight: 500;
+  }
+}
 @media screen and (max-width: 720px) and (min-width: 585px) {
   span {
     font-size: 7.8vw;
@@ -246,7 +515,14 @@ footer {
   .heading {
     padding: 90px 36px;
   }
+<<<<<<< Updated upstream
 
+=======
+  .contain_form_data{
+    grid-template-columns: 1fr 1fr ;
+  
+  }
+>>>>>>> Stashed changes
   .mainhead {
     font-size: 4.2vw;
     word-spacing: normal;
@@ -260,12 +536,24 @@ footer {
     font-weight: 500;
     letter-spacing: normal;
   }
+<<<<<<< Updated upstream
 
   .startforfree1 {
+=======
+  .contain_form_data{
+    grid-template-columns: 1fr ;
+  
+  }
+  .form_container {
+    padding: 1rem;
+}
+
+  .startforfree{
+>>>>>>> Stashed changes
 
     width: 100px;
     height: 50px;
-    padding: 0px 0px;
+    padding: 6px 12px;
     border-radius: 10px;
     border: #e44232;
     font-weight: 400;
@@ -293,6 +581,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     padding: 20px 50px 20px 50px;
+<<<<<<< Updated upstream
 
   }
 
@@ -395,6 +684,32 @@ th{
   }
   th{
     font-size: 15;
+=======
+
+  }
+
+  .todolist3 {
+    color: #e44232;
+    display: none;
+    font-size: 3vw;
+
+  }
+
+  .todolist {
+    color: #e44232;
+    display: inline;
+    font-size: 8vw;
+
+  }
+
+  .heading {
+    padding: 90px 36px;
+  }
+
+  .mainhead {
+    font-size: 4vw;
+    word-spacing: normal;
+>>>>>>> Stashed changes
     font-weight: 400;
   
   }
@@ -404,6 +719,7 @@ th{
     line-height: 40px;
   }
 }
+<<<<<<< Updated upstream
 .feature1 ,.feature2{
   padding: 100px;
   display: flex;
@@ -474,3 +790,37 @@ th{
     width:50vw;
   }
 }
+=======
+ 
+
+/* table css  */
+.table{
+  border-radius: 20px;
+  margin: 20px;
+  height: 100vh;
+  width: 96vw;
+}
+
+
+@media screen and (max-width: 693px){
+  .table{
+    
+    
+    margin: 2px;
+    height: 100vh;
+  
+  }
+  td{
+    font-size: 17px;
+    font-weight: 300;
+  }
+  th{
+    font-size: 15;
+    font-weight: 400;
+  
+  }
+  .tabletag{
+    margin: 10px;
+  }
+}
+>>>>>>> Stashed changes
