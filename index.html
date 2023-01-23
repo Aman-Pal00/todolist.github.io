@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- JavaScript Bundle with Popper -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>TO DO LIST</title>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  form div {
+    box-shadow: 0px 0px 100px#e8e8e8;
+    border-radius: 20px;
+    padding: 0rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: min(100vw , 550px);
+  }
+
+  form div h4 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0rem 1rem 0.8rem;
+  }
+
+  form div button {
+    background-color: #c2e7ff;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin: 2rem 0rem;
+  }
+
+  form div button:hover {
+    box-shadow: 0px 0px 5px grey;
+  }
+
+  input {
+    border: 1px solid grey;
+    border-radius: 34px;
+    font-size: large;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+  input:hover {
+    transform: scale(1.01);
+  }
+
+  .priority {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    box-shadow: none;
+  }
+
+  label:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+
+  label {
+    font-size: 20px;
+    border-bottom: 2px solid #e1c3c3;
+    height: fit-content;
+    padding: 10px;
+    margin: 0px 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg fs-4 text-light sticky-top navbar-light bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TO DO LIST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+       
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="heading">
+      <span>Organize your <br>
+        work and life, finally.</span>
+      <p class="mainhead">
+        Become focused, organized, and calm with <span class="todolist"> ToDoList</span>.
+      </p>
+    </div>
+    <div class="startbutton">
+      <a href="#addtask" class="startforfree"> Start for free</a>
+    </div>
+    <small style="display:block;text-align:center; margin-top:20px; font-size: 0.7rem;"><a style=" color:blue;" href="#signup"> Sign
+        Up</a> if you don't have todolist account</small>
+    <div class="headimg">
+      <img class="imgleft" src="images/navbgright.webp" alt="">
+      <img class="imgmid" src="images/navbg.avif" alt="">
+      <img class="imgright" src="images/navbgleft.webp" alt="">
+    </div>
+    <div id="feature">
+      <div class="feature1">
+        <div class="text">
+          <div>
+            <div style="text-align: center;">Add your tasks. <br>Organize your life. <br> Achieve more every day.</div>
+            <div class="smalltext">Add tasks like “Read work emails every day at 10am” to fill your to-do list in
+              seconds.</div>
+          </div>
+        </div>
+
+        <div class="featureimgdiv"><img src="images/featureimg.webp" class="featureimg" alt=""></div>
+      </div>
+      <hr color="red" style=" width:50vw; color: #FF5533; height: 4px; text-align: end;">
+      <div class="feature2">
+        <div class="featureimg"><img class="featureimg" src="images/featureimg2.webp" alt=""></div>
+        <div class="text">
+          <div>
+            <div style="text-align: center;">Reach that mental clarity <br> you’ve been longing for.</div>
+            <div class="smalltext">Your to-do lists are automatically sorted into Today, Upcoming and custom Filter
+              views to help you focus on your most important things.</div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="formwithtable">
+        <div id="addtask">
+          <h1 style="display:block; text-align: center; margin: 20px; font-size:3.3vw;">Add your task</h1>
+        </div>
+
+
+        <div class="wholebody">
+          <form style="margin: 100px 0px 100px 0px" >
+            <div>
+              <h4 id="taskname">Task name</h4>
+              <!-- <textarea  type="text"/> -->
+              <textarea name="formtaskname" id="formtaskname" class="formtaskname" cols="30" rows="10" placeholder="Enter your task name " ></textarea>
+
+              
+              <button id="addbtn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+      <div id="form_container" class="form_container">
+        <div class="contain_form_data" id="contain_form_data">
+          <div class="data">
+          
+          </div>
+         
+         
+         
+        </div>
+      </div>
+
+        <div id="aboutus" class="aboutusimg">
+          <img style="width: 78vw; " src="images/aboutus4.jpeg" alt="">
+        </div>
+        <div style="padding-top: 10px;">
+          <div class="aman">
+            <div class="aboutusimg"><img
+                style="width: 100px; height:100px; border-radius: 100%; border: 5px solid white;"
+                src="images/amanphoto.jpg" alt="">
+              <h2>Aman Pal</h2>
+            </div>
+            <H3 style="text-align: center;">Contact Us</H3>
+            <div class="socialmedialinks">
+              <a href="#"> <img style="width: 2.1rem; margin:0px 0.5rem ;" src="icons/envelope-solid.svg" alt=""></a>
+              <a href="#"> <img style="width: 2.1rem ; margin:0px 0.5rem ;" src="icons/instagram.svg" alt=""></a>
+              <a href="#"> <img style="width: 2.1rem; margin:0px 0.5rem ; " src="icons/github.svg" alt=""></a>
+              <a href="#"> <img style="width: 2.1rem ; margin:0px 0.5rem ;" src="icons/twitter.svg" alt=""></a>
+            </div>
+
+
+          </div>
+        
+ 
+         
+
+       
+          <form id="signup" action="index.php">
+            <div>
+
+              <h1 style="text-align: center; margin-top: 2rem;">Free signup</h1>
+              <h1 style="font-size: 1rem; text-align: center; font-weight: 300;">Customise todolist and make it's own
+              </h1>
+              <h4 class="">E-mail address</h4>
+              <input type="email" placeholder="Enter your E-mail" />
+
+              <h4 class="h4">Password</h4>
+              <input type="password" placeholder="Create a strong password" />
+              <h4 class="h4">Re-enter Password:</h4>
+              <input type="password" placeholder="Re-enter your password" />
+
+              <button type="submit">submit</button>
+            </div>
+
+          </form>
+
+  </main>
+
+  <footer>
+    <div class="upperfooter">
+      <img src="images/footerbg.webp" alt="" class="footerimg">
+      <div style="align-items: centre; display:block; justify-content:center;">
+        <h3 class="h3footer">Achieve peace of mind with <span style="font-size: 4vw;" class="todolist"> ToDoList</span>
+        </h3>
+        <a href="#addtask"> <button class="startforfree">Start for free</button></a>
+      </div>
+    </div>
+    <hr color="red" style="color: #FF5533; height: 1px; text-align: end;">
+    <div class="lowerfooter">
+      <div><img class="footerlistimg" src="images/todolisticon.webp" alt=""><span style="margin:0px 0px 30px 20px  ;"
+          class="todolist3">ToDoList</span>
+        <p>Join millions of people who organize work and <br> life with To Do List.</p>
+      </div>
+      <div class="lowerfooterdata">
+        <h5 style="font-size: 1.3rem;">Features</h5>
+        <ul style="list-style: none;line-height: 2rem; ">
+          <li><a style="text-decoration: none; " href="">Teams</a></li>
+          <li><a style="text-decoration: none;" href="">Pricing</a></li>
+        </ul>
+
+      </div>
+      <div class="lowerfooterdata">
+        <h5 style="font-size: 1.3rem;">Company</h5>
+        <ul style="list-style: none;line-height: 2rem; ">
+          <li><a style="text-decoration: none; " href="">About Us</a></li>
+          <li><a style="text-decoration: none;" href="">Feedback</a></li>
+          <li><a style="text-decoration: none;" href="">Help center</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="privacypolicy">
+      <p>Security || Privacy || Terms &#169 Created by <span style="color: #e44232; font-size: 1rem;">Aman Pal </span>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

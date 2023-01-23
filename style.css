@@ -1,0 +1,503 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+html{
+  scroll-behavior: smooth;
+}
+.startingimg{
+  width: 100vw;
+  height: 20vh;
+}
+nav{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  
+}
+
+
+
+
+.heading {
+  padding: 90px 120px;
+}
+
+span {
+  display: block;
+  font-size: 4.2vw;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.mainhead {
+  text-align: center;
+  font-size: 2.2vw;
+  font-weight: 600;
+  word-spacing: 8px;
+}
+
+.startbutton {
+  display: block;
+  text-align: center;
+  margin-top: 49px;
+}
+
+.startforfree {
+  background: #e44232;
+  width: 200px;
+  height: 50px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  border: #e44232;
+  font-weight: 600;
+  box-shadow: 10px 10px 30px #e44232;
+  font-size: large;
+  color: white;
+}
+
+
+.headimg {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.imgleft {
+  width: 33vw;
+  z-index: -1;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.imgmid {
+  width: 70vw;
+  z-index: 1;
+  position: relative;
+  top: 0px;
+  right: 17vw;
+}
+
+.imgright {
+  width: 33vw;
+  z-index: -1;
+  position: relative;
+  top: 0px;
+  right: 37.4vw;
+}
+
+footer {
+  background: #ffddbc;
+  margin-top: 250px;
+}
+
+.upperfooter {
+  display: flex;
+  padding: 10px 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerimg {
+  height: 45vw;
+  margin-right: 129px;
+  position: relative;
+  top: -80px;
+
+}
+
+.footerlistimg {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.todolist,
+.todolist3,
+.logo {
+  color: #e44232;
+  display: inline;
+  font-size: 30px;
+
+}
+
+
+
+.h3footer {
+  font-size: 4vw;
+
+}
+
+.lowerfooter {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
+.lowerfooterdata{
+  width: 20%;
+  text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+
+}
+.privacypolicy {
+  background-color: #00000048;
+  padding: 10px 24px;
+  text-align: center;
+}
+
+
+/* this css is for feature of to do list  */
+.feature1 ,.feature2{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+.text{
+  width: 50vw;
+  font-size: 7vh;
+  font-weight: 500;
+  margin: 8rem;
+
+}
+.smalltext{
+  font-size: 4vh;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+.featureimgdiv{
+   width: 50vw;
+   display: flex;
+   justify-content: center;
+}
+.featureimg{
+  width: 30vw;
+}
+
+
+/* this css is for form  */
+
+form {
+  padding: 2rem 3rem;
+  margin: 10px 20px ;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.h4,
+.formpriority,
+.formduedate,
+.formnote {
+  font-size: 1.4rem;
+  margin: 15px 0px;
+  padding-left: 10px;
+}
+
+.formtaskname,
+#formduedate,
+#formnote {
+  border: 1px solid grey;
+    border-radius: 34px;
+    font-size: large;
+    padding: 0.5rem;
+    margin-top: 1rem;
+
+}
+.formtaskname:hover ,#formduedate:hover , #formnote:hover{
+  transform: scale(1.02);
+}
+
+
+label {
+  font-size: 20px;
+  border-bottom: 2px solid red;
+  height: fit-content;
+  padding: 10px;
+  margin: 0px 10px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+label:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+
+.formsubmitbutton{
+  background-color:#3bb1dc;
+  margin: 31px 0px;
+  height: 32px;
+  border: #3bb1dc;
+  border-radius: 10px;
+  width: 119px;
+  text-align: center;
+}
+.formsubmitbutton:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  color: white ;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 15px#686f7b;
+}
+
+
+/* about us details */
+#aboutus{
+  margin-top: 5rem;
+}
+.aman {
+  margin: 5rem 10%;
+  padding:0px 20px 20px 20px;
+  background-color:#ffddbc;
+  border-radius: 20px;
+  box-shadow: 5px 3px 20px #ffddbc;
+}
+.aboutusimg{
+  text-align: center;
+  position: relative;
+  top: -44px;
+}
+.aboutusimg2{
+  text-align: center;
+  padding: 20px ;
+  
+}
+.socialmedialinks{
+    text-align: center;
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.aboutmetext{
+    text-align: center;
+    padding: 20px ;
+}
+
+.ayush {
+  /* border: 2px solid black; */
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffddbc;
+  border-radius: 20px;
+  box-shadow: 5px 3px 20px#ffddbc;
+
+}
+.form_container{
+  padding: 3rem;
+}
+
+.contain_form_data{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  
+}
+.contain_form_data div{
+  padding: 2rem;
+  box-shadow: 10px 10px 10px grey;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  label {
+      display: flex;
+      margin: 10px;
+
+  }
+}
+@media screen and (max-width: 1002px){
+  .text{
+      width: 50vw;
+      font-size: 7vh;
+      font-weight: 500;
+      margin: 4rem;
+  
+}
+}
+
+
+@media screen and (max-width: 879px){
+  .text{
+      width: 50vw;
+      font-size: 5vh;
+      font-weight: 500;
+      margin: 2rem;
+
+  }
+  .smalltext{
+      font-size: 3vh;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 639px){
+  .feature1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .feature2{
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .featureimg{
+      width: 62vw;
+  }
+  .text{
+      width: 80vw;
+      font-size: 4.1vh;
+      font-weight: 600;
+      padding: 2rem;
+  }
+  .smalltext{
+      font-size: 2.3vh;
+      font-weight: 500;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 585px) {
+  span {
+    font-size: 7.8vw;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+
+  .heading {
+    padding: 90px 36px;
+  }
+  .contain_form_data{
+    grid-template-columns: 1fr 1fr ;
+  
+  }
+  .mainhead {
+    font-size: 4.2vw;
+    word-spacing: normal;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  span {
+    font-size: 7.8vw;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+  .contain_form_data{
+    grid-template-columns: 1fr ;
+  
+  }
+  .form_container {
+    padding: 1rem;
+}
+
+  .startforfree{
+
+    width: 100px;
+    height: 50px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: #e44232;
+    font-weight: 400;
+    font-size: small;
+    color: white;
+  }
+
+  .footerimg {
+    display: none;
+    height: 45vw;
+    margin-right: 129px;
+    position: relative;
+    top: -80px;
+
+  }
+
+  .h3footer {
+    margin: 40px 0px 0px 20px;
+    font-size: 8vw;
+
+  }
+
+  .lowerfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 50px 20px 50px;
+
+  }
+
+  .todolist3 {
+    color: #e44232;
+    display: none;
+    font-size: 3vw;
+
+  }
+
+  .todolist {
+    color: #e44232;
+    display: inline;
+    font-size: 8vw;
+
+  }
+
+  .heading {
+    padding: 90px 36px;
+  }
+
+  .mainhead {
+    font-size: 4vw;
+    word-spacing: normal;
+    font-weight: 400;
+  }
+}
+ 
+
+/* table css  */
+.table{
+  border-radius: 20px;
+  margin: 20px;
+  height: 100vh;
+  width: 96vw;
+}
+
+
+@media screen and (max-width: 693px){
+  .table{
+    
+    
+    margin: 2px;
+    height: 100vh;
+  
+  }
+  td{
+    font-size: 17px;
+    font-weight: 300;
+  }
+  th{
+    font-size: 15;
+    font-weight: 400;
+  
+  }
+  .tabletag{
+    margin: 10px;
+  }
+}
